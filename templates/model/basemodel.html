@@ -1,0 +1,57 @@
+<!-- Modal -->
+<div class="modal fade close-model " {% block model-id %}{% endblock %} tabindex="-1"
+  aria-labelledby="defaultModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); border: none;">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="defaultModalLabel"><i class="fas fa-code"></i>&nbsp;&nbsp;{% block model-title%}{% endblock %}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <form method="POST" {% block faction %}{% endblock %} enctype="multipart/form-data" autocomplete="off">
+        {% csrf_token %}
+        <div class="modal-body">
+          <div class="mb-1 mt-0">
+
+            <div class="input-group mb-2">
+
+              <input type="text" style="margin-right: 10px; border-radius: 5px;" class="form-control " maxlength="30"
+                placeholder="your full name" aria-label="Username" name="fullname" required>
+
+              <input type="number" class="form-control" style="border-radius: 5px;" placeholder="enter age" required
+                name="age">
+            </div>
+
+
+            <input type="email" class="form-control" id="exampleFormControlInput2" name="email" placeholder="your email"
+              required>
+
+            <input type="text" maxlength="12" class="form-control mt-2" id="exampleFormControlInput4"
+              name="contactnumber" placeholder="contact number" required>
+          </div>
+
+          <div class="mt-2">
+            <textarea class="form-control" name="experience" rows="3" placeholder="talk a little about your experience."
+              required></textarea>
+          </div>
+          <div class="mt-2">
+            <textarea class="form-control" name="skills" rows="3" placeholder="talk a little about your skills."
+              required></textarea>
+          </div>
+          <div>
+            <label for="formFileSm" class="form-label" style="font-size: 20px;">resume</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file" name="resume" accept=".pdf, .doc"
+              required>
+            <div class="form-text">only pdf</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary btn-send">Send</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

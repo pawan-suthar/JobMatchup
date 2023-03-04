@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}job category{% endblock title %}
+
+{% block navbarname %}jobs list{% endblock navbarname %}
+{% block heading %}{% endblock %}
+
+{% block backbtn %}
+<a class="navbar-brand justify-content-between" href="{% url 'home'%}">
+    &nbsp;&nbsp;Back
+</a>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container" style="width: 80%;">
+    <div class=" align-items-center row" >
+        <h6 class="btn btn-primary" style="width: 100%; cursor: default;background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); border: none;">
+            <strong>available jobs</strong>
+        </h6>
+
+        <!-- card start -->
+
+        <div class="card mt-3 text-center " style="width: 18rem; background: rgb(247,247,251);
+        background: linear-gradient(342deg, rgba(247,247,251,1) 46%, rgba(0,212,255,1) 100%); border: none;margin-right: 10px; ">
+            
+            
+            <div class="card-body">
+                <h5 class="card-title text-black">Front end</h5>
+                
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#frontendmodel">apply</a>
+            </div>
+        </div>
+        <!-- card end -->
+        <div class="card mt-3 text-center" style="width: 18rem; background: rgb(247,247,251);
+        background: linear-gradient(342deg, rgba(247,247,251,1) 46%, rgba(0,212,255,1) 100%); border: none;margin-right: 10px;">
+            
+            
+            <div class="card-body">
+                <h5 class="card-title text-black">back end</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#backendmodel">apply</a>
+            </div>
+        </div>
+        <div class="card mt-3 text-center" style="width: 18rem; background: rgb(247,247,251);
+        background: linear-gradient(342deg, rgba(247,247,251,1) 46%, rgba(0,212,255,1) 100%); border: none;margin-right: 10px;">
+            
+            
+            <div class="card-body">
+                <h5 class="card-title text-black">full stack</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullstackmodel">apply</a>
+            </div>
+        </div>
+        <div class="card mt-3 text-center" style="width: 18rem; background: rgb(247,247,251);
+        background: linear-gradient(342deg, rgba(247,247,251,1) 46%, rgba(0,212,255,1) 100%); border: none;margin-right: 10px;">
+            
+            
+            <div class="card-body">
+                <h5 class="card-title text-black">internship</h5>
+                <p class="card-text text-black">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#internmodel">apply</a>
+            </div>
+        </div>
+        
+        
+
+       
+        
+        
+        
+    </div>
+</div>
+
+
+<!-- backend wala spinner -->
+
+<div id="b-spinner">
+    <div id="position-spinner">
+        <span id="spinner"></span>
+    </div>
+</div>
+
+<br>
+
+
+{% endblock body %}

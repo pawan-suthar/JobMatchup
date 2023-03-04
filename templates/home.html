@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="container" style=" text-align: center;margin-top: 100px;">
+    <p class="fs-2 fst-italic text-center text-white" id="element">Find Your Next Opportunity</p>
+</div>
+
+<div class="container" style=" text-align: center; margin-top: 90px;">
+    <button type="button" class="btn btn-primary"><a href="{% url 'job_categoryy' %}" style="color: white; text-decoration: none;">view jobs</a></button>
+    
+</div>
+
+<footer class="text-center text-lg-center " style="color: white; position: fixed; bottom: 0;width: 100%;">
+    <div class="p-3 m-auto d-flex justify-content-center" " >&copy;{% now "Y" %} copyright: &nbsp;
+      <a class="text-center" href="#" style="text-decoration: none;">
+        <span class="text-warning"><a href="/" style="text-decoration: none; color: rgb(251, 227, 43);">www.jobmatchup.com</a></span>
+      </a>
+    </div>
+  </footer>
+
+
+
+{% endblock body %}

@@ -1,0 +1,74 @@
+body {
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+html {
+  height: 100%;
+}
+
+/* other parts */
+#navbar-content {
+  text-align: center;
+  color: #fff;
+  margin-left: 25px;
+}
+
+/* footer */
+.wrapper {
+  margin-bottom: -50%;
+  min-height: 100%;
+}
+
+/* preloader css */
+
+
+/* backend spinner ajax */
+
+#b-spinner{
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: none;
+  background: rgba(1, 1, 1, 0.7);
+}
+
+#position-spinner{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner{
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 6px #d3d3d3 solid;
+  border-top: 6px #ffc107 solid;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }

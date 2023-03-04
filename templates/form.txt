@@ -1,0 +1,11 @@
+<b>name:</b> {{name}}
+<br>
+<b>email:</b> {{email}}
+<br>
+<b>age:</b> {{age}}
+<br>
+<b>ph no.:</b> {{contactnumber}}
+<br>
+<b>experince:</b> {{experience}}
+<br>
+<b>skils: </b>{{skills}}
